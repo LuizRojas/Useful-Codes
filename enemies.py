@@ -25,11 +25,11 @@ class Character():
                 print("{}DOUBLE CRITICAAAL >:({}".format("\033[1;91m", "\033[0m"))
             
             elif (sorted_rand_value == 3):
-                print("{}OH MY GAAAA, TRIPLEE CRITICALLL YAA{}".format("\033[1;95", "\033[0m"))
+                print("{} OH MY GAAAA, TRIPLEE CRITICALLL YEAAAH{}\n".format("\033[1;95", "\033[0m"))
         
         damage = ((self.attack * 50) // (50 + enemy.defense)) * sorted_rand_value
         enemy.life -= damage
-        
+
 class Skeleton(Character):
     def __init__(self):
         Character.__init__(self)

@@ -1,6 +1,7 @@
 from os import system
 import enemies
 
+
 enemy1 = enemies.Skeleton()
 hero1 = enemies.Hero()
 
@@ -11,7 +12,10 @@ def checkout_victory(enemy: object):
     
     return False
 
-def choice_option():
+def choice_option(hero):
+    if (hero.defending == True):
+        hero.defending = False
+
     choice = int(input("Enter 1 - to attack\nEnter 2 - to defend\nEnter 3 - to critical attack\nEnter 4 - to skip round\nEnter 5 - to exit battle >:(\n-> "))
 
     if (choice == 1):

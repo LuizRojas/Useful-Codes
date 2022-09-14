@@ -1,5 +1,6 @@
 from battle import simulate_battle
 
+
 def main():
     try:
         simulate_battle()
